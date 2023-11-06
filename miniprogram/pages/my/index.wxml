@@ -1,0 +1,54 @@
+<!--my/index.wxml-->
+<!-- <text>my/index.wxml</text> -->
+<view class="main">
+  <view class="header">
+    <view class="avatar"></view>
+    <view class="opts">请注册/登录</view>
+  </view>
+  <view class="remain-wrapper">
+    <view class="remain" bind:tap="goToRecord">
+      <view class="content">剩余创作次数：</view>
+      <view class="num">10次</view>
+      <view class="to-detail iconfont icon-youjiantou"></view>
+    </view>
+  </view>
+
+  <view class="info">
+    <view class="item" bind:tap="goToBuy">
+      <view class="icon iconfont icon-goumai"></view>
+      <view class="content">订购</view>
+      <view class="to-detail iconfont icon-youjiantou"></view>
+    </view>
+
+    <view class="item" bind:tap="goToWorksRecord">
+      <view class="icon iconfont icon-lishijilu_huaban"></view>
+      <view class="content">创作记录</view>
+      <view class="to-detail iconfont icon-youjiantou"></view>
+    </view>
+
+    <view class="item">
+      <view class="icon iconfont icon-changjianwentixiangguanwenti"></view>
+      <view class="content">常见问题</view>
+      <view class="to-detail iconfont icon-youjiantou"></view>
+    </view>
+
+    <view class="item">
+      <view class="icon iconfont icon-lianxikefu"></view>
+      <view class="content">联系客服</view>
+      <view class="to-detail iconfont icon-youjiantou"></view>
+    </view>
+
+    <view class="item">
+      <view class="icon iconfont icon-guanyuwomen"></view>
+      <view class="content">关于</view>
+      <view class="to-detail iconfont icon-youjiantou"></view>
+    </view>
+
+
+    <view class="item">
+      <view class="icon iconfont icon-fenxiang"></view>
+      <view class="content">分享有礼</view>
+      <view class="to-detail iconfont icon-youjiantou"></view>
+    </view>
+  </view>
+</view>

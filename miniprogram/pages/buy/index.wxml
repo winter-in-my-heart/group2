@@ -1,0 +1,26 @@
+<!--pages/buy/index.wxml-->
+<!-- <text>pages/buy/index.wxml</text> -->
+<view class="main">
+  <view class="methods">
+    <view class="frequency {{method === 0 ? 'active':''}}" data-method="0" bind:tap="changeMethod">按次购买</view>
+    <view class="time {{method === 1 ? 'active':''}}" data-method="1" bind:tap="changeMethod">按年月购买</view>
+  </view>
+  <view class="content">
+    <view bind:tap="selectMethod" wx:for="{{content[method]}}" wx:key="index" class="item {{activeId === item.id? 'active': ''}}" data-id="{{item.id}}">
+      <view class="detail">{{item.detail}}</view>
+      <view class="current">￥{{item.currentPrice}}</view>
+      <view class="delete">￥{{item.deletePrice}}</view>
+    </view>
+  </view>
+
+  <view class="action">
+    <view class="prompt">
+      <text>开通前请阅读</text>
+      <text class="emphasis">《会员服务协议》</text>
+    </view>
+
+    <view class="buy">
+      ￥{{activePrice}} 立即购买
+    </view>
+  </view>
+</view>

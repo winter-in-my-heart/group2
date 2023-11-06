@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/playground/index",
+    "pages/my/index",
+    "pages/record/index",
+    "pages/buy/index",
+    "pages/works-record/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#409EFF",
+    "color": "#ccc",
+    "list": [
+      {
+        "pagePath": "pages/playground/index",
+        "text": "广场",
+        "iconPath": "images/tabbar/square.png",
+        "selectedIconPath": "images/tabbar/square-selected.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "HOME",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/home-selected.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "images/tabbar/my.png",
+        "selectedIconPath": "images/tabbar/my-selected.png"
+      }
+    ]
+  },
+  
+  "usingComponents": {
+    "works": "/components/works/index"
+  }
+}

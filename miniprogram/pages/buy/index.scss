@@ -1,0 +1,99 @@
+/* pages/buy/index.wxss */
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  .methods {
+    padding-top: 24rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    .active {
+      background-color: #fff;
+    }
+
+    .frequency {
+      flex: 1
+    }
+
+    .time {
+      flex: 1
+    }
+  }
+
+  .content {
+    z-index: 1;
+    position: absolute;
+    top: 104rpx;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding: 40rpx 24rpx 0;
+
+    .item {
+      margin-top: 24rpx;
+      padding: 24rpx;
+      height: 60rpx;
+      border-radius: 16rpx;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+
+      .detail {
+        font-weight: bold;
+        flex: 1;
+      }
+
+      .current {
+        font-size: 36rpx;
+        color: var(--primary-color);
+      }
+
+      .delete {
+        margin-left: 20rpx;
+        text-decoration: line-through;
+        color: #ccc;
+      }
+    }
+
+    .active {
+      border: 1px solid var(--primary-color);
+      background-color: var(--primary-background-color);
+      box-shadow: var(--primary-shadow);
+    }
+  }
+
+  .action {
+    z-index: 2;
+    position: absolute;
+    bottom: 60rpx;
+    left: 50%;
+    transform: translate(-50%);
+    width: 600rpx;
+    text-align: center;
+    font-size: 24rpx;
+
+    .emphasis {
+      color: var(--primary-color);
+    }
+
+    .buy {
+      display: block;
+      margin-top: 24rpx;
+      padding: 20rpx;
+      font-size: 32rpx;
+      border-radius: 48rpx;
+      background-color: var(--primary-color);
+      box-shadow: var(--primary-shadow);
+      // box-shadow: 10rpx 16rpx 28rpx #e5e5e5;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<!--components/works/index.wxml-->
+<!-- <text>components/works/index.wxml</text> -->
+<view class="main">
+  <view class="card" wx:for="{{cards}}" wx:key="index">
+    <!-- <view class="header"></view> -->
+    
+    <image class="header" src="../../images/animal.png"></image>
+    <view class="info">
+      <view class="title">{{item.title}}</view>
+      <view class="num">{{item.num}}人表态</view>
+    </view>
+  </view>
+</view>

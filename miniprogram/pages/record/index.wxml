@@ -1,0 +1,13 @@
+<!--pages/record/index.wxml-->
+<!-- <text>pages/record/index.wxml</text> -->
+<view class="main">
+  <view class="record">
+    <view class="item" wx:for="{{records}}" wx:key="index">
+      <view class="left">
+        <view class="option">{{item.option}}</view>
+        <view class="time">{{item.time}}</view>
+      </view>
+      <view class="num">{{item.times}}</view>
+    </view>
+  </view>
+</view>

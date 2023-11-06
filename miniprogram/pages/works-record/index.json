@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "works": "/components/works/index"
+  },
+  "navigationBarTitleText": "创作记录"
+}

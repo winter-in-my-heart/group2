@@ -1,0 +1,25 @@
+/* pages/record/index.wxss */
+.main{
+  margin-top: 24rpx;
+
+  .record{
+    padding: 0 24rpx;
+    background-color: #fff;
+    .item{
+      padding: 16rpx;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+
+      .left{
+        flex: 1;
+
+        .time{
+          margin-top: 16rpx;
+          font-size: 24rpx;
+          color: #999;
+        }
+      }
+    }
+  }
+}
